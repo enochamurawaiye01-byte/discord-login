@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Login Clone</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Background Image + Overlay Gradient */
+    body {
+      height: 100vh;
+      background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.8) 80%, rgba(255,255,255,0.2) 100%),
+        url("C:/Users/DELL/Downloads/discordimg.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Login Box */
+    .login-container {
+      background-color: rgba(35, 39, 42, 0.9);
+      padding: 40px;
+      width: 350px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      color: #b9bbbe;
+      margin-bottom: 25px;
+    }
+
+    /* Input Fields */
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #202225;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* Login Button */
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #5865f2;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #4752c4;
+    }
+
+    /* Links */
+    .login-container a {
+      color: #00b0f4;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    /* -----------------------------
+         RESPONSIVE MEDIA QUERIES
+    ----------------------------- */
+    /* Small Phones */
+    @media (max-width: 400px) {
+      .login-container {
+        width: 90%;
+        padding: 30px;
+      }
+
+      .login-container h2 {
+        font-size: 20px;
+      }
+
+      .login-container p {
+        font-size: 12px;
+      }
+
+      .login-container input, .login-container button {
+        padding: 10px;
+        font-size: 13px;
+      }
+    }
+
+    /* Medium Phones / Portrait Tablets */
+    @media (max-width: 600px) {
+      .login-container {
+        width: 80%;
+        padding: 35px;
+      }
+
+      .login-container h2 {
+        font-size: 22px;
+      }
+
+      .login-container p {
+        font-size: 13px;
+      }
+
+      .login-container input, .login-container button {
+        padding: 11px;
+        font-size: 14px;
+      }
+    }
+
+    /* Tablets / Small Laptops */
+    @media (max-width: 768px) {
+      .login-container {
+        width: 60%;
+        padding: 40px;
+      }
+
+      .login-container h2 {
+        font-size: 24px;
+      }
+
+      .login-container p {
+        font-size: 14px;
+      }
+
+      .login-container input, .login-container button {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome back!</h2>
+    <p>We’re so excited to see you again!</p>
+
+    <form>
+      <input type="email" placeholder="Email or Phone Number" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <p style="margin-top: 15px;">
+      <a href="#">Forgot your password?</a>
+    </p>
+    <p style="margin-top: 10px; color: #b9bbbe;">
+      Need an account? <a href="#">Register</a>
+    </p>
+  </div>
+</body>
+</html>
